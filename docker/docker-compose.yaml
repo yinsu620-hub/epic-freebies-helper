@@ -14,14 +14,16 @@ services:
       # ----------------------------------------
       - EPIC_EMAIL=你的邮箱@example.com
       - EPIC_PASSWORD=你的密码
-      - GEMINI_API_KEY=sk-xxxxxxxxxxxxxxxxxxxxxxxxxx # 使用 GLM 或 DeepSeek 时可删除这一行
 
       # ----------------------------------------
       # LLM 提供方配置
       # ----------------------------------------
-      - LLM_PROVIDER=gemini
-      - GEMINI_BASE_URL=https://aihubmix.com
-      - GEMINI_MODEL=gemini-2.5-pro
+      - LLM_PROVIDER=deepseek
+      - DEEPSEEK_API_KEY=your_deepseek_api_key
+      - DEEPSEEK_BASE_URL=https://api.deepseek.com
+      - DEEPSEEK_MODEL=deepseek-v4-pro
+      - DEEPSEEK_THINKING_ENABLED=false
+      - DEEPSEEK_REASONING_EFFORT=high
       # 如果使用 GLM，请改成下面这组
       # - LLM_PROVIDER=glm
       # - GLM_API_KEY=your_glm_api_key
